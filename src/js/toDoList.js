@@ -6,8 +6,11 @@ $(document).ready(function() {
   $('#submit').click(function(e) {
     e.preventDefault();
     var item = $('#addItem').val().trim();
-    if (item !=='') {
-      $('ul').first().append('<li>' + item + '<button class="btn">X</button' + '</li>');
+    if (item !== '') {
+      $('ul').first().append('<li>'
+        + item
+        + '<button class="btn">X</button'
+        + '</li>');
       $('#addItem').val('');
       $('#addItem').focus();
     }
