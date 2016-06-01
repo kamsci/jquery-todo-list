@@ -1,0 +1,21 @@
+body {
+  margin-left: 20px;
+  font-family: Helvetica;
+
+}
+
+#addItem {
+  font-size: 14px;
+}
+.btn {
+  margin-left: 15px;
+}
+
+.listContainer {
+
+}
+/*
+#submit {
+  font-size: 12px;
+
+}*/
