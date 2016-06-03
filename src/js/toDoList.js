@@ -11,11 +11,17 @@ $(document).ready(function() {
         + item
         + '<button class="btn">X</button'
         + '</li>');
-      $('#addItem').val('');
-      $('#addItem').focus();
+      $('#addItem').val('').focus();
+      // $('#addItem');
+
+      var numItems = $('ul li').length();
+      $('ul li:nth-child('+numItems+')').on('click', function() {
+        $(this).remove();
+      });
     }
   });
-  $('ul').delegate('li', 'click', function() {
-    $(this).remove();
-  });
+
+  // $('li').on('click', 'button', function() {
+  //   $(this).remove();
+  // });
 }); // end of doc ready
